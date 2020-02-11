@@ -16,6 +16,8 @@ end
 
 https://towardsdatascience.com/database-normalization-explained-53e60a494495
 
+_MAIN IDEA: Data ought to be organized in order to easily write reliable CRUD logic._
+
 **First normal form**
 * Individual columns are in most reduced state. IE: The data needs max 1 column to contain it.
 * Rows are uniquely identified.
@@ -46,3 +48,15 @@ last_mame
 city <=== this depends on postal_code
 postal_code
 ```
+
+# APIs
+
+## HATEOAS
+
+http://restcookbook.com/Basics/hateoas/
+
+API responds with options along with routes.
+
+EG:
+* CLIENT: What is my bank account balance?
+* API: $xxx. Here are some routes for withdrawing and depositing.
